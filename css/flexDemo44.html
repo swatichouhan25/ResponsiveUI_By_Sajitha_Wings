@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
+
+        <style>
+            .FlexWrapper{
+                background-color: indigo;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .FlexItem
+            {
+                display: flex;
+                align-items: center;
+                min-height: 6.25rem;
+                padding: 1rem;
+            }
+            .FlexContent{
+                background-color: aqua;
+                order:2;
+            }
+            .FlexSideOne{
+                background-color: blueviolet;
+                order:3;
+            }
+
+            .FlexSideTwo{
+                background-color: brown;
+                order:4;
+            }
+
+            .FlexHeader{
+                background-color: rgb(88, 34, 236);
+                order:1;
+            }
+
+            .FlexFooter{
+                background-color: darkcyan;
+            order:5;
+            align-items: center;
+            justify-content: center;
+            }
+            @media (min-width:30rem){
+            .FlexWrapper{
+                flex-flow: row wrap;
+            }
+            }
+
+            .FlexHeader{
+                width: 100%;
+            }
+            .FlexContent{
+                flex:1 0 auto;
+                order: 3;
+            }
+
+            .FlexSideOne{
+                width: 150px;
+                order: 2;
+            }
+
+            .FlexSideTwo{
+                width: 150px;
+                order: 4;
+            }
+            .FlexFooter{
+                width: 100%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="FlexWrapper">
+            <div class="FlexItem FlexContent"> I am a content in the Main Content Pane</div>
+            <div class="FlexItem FlexSideOne"> I am a content in the SideOne</div>
+            <div class="FlexItem FlexSideTwo"> I am a content in the SideTwo</div>
+            <div class="FlexItem FlexHeader"> I am a content in the Header</div>
+            <div class="FlexItem FlexFooter"> I am a content in theFooter</div>
+        </div>
+    </body>
+</html>

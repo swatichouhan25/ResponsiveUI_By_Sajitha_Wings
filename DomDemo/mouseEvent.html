@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="divId" onmouseover="changeColor()" style="width: 100px; height: 100px; background-color: pink;">A Block</div>
+   <script>
+window.onload=function doneNow(){
+    console.log("hii");
+    document.getElementById("divId").addEventListener('mousedown',function(){
+        changeColor(this,'green')
+    });
+    document.getElementById("divId").addEventListener('mouseup',function(){
+        changeColor(this,'yellow')
+    });
+
+    document.getElementById("divId").addEventListener('mouseout',function(){
+        changeColor(this,'black')
+    });
+
+    document.getElementById("divId").addEventListener('dblclick',function(){
+        changeColor(this,'blue')
+    });
+
+    function changeColor(e1,color){
+        e1.style.backgroundColor= color;
+
+    }
+    console.log("hello");
+}
+
+
+
+
+
+
+    // function changeColor(){
+    //     document.getElementById("divId").style.backgroundColor='blue';
+    // }
+   </script>
+   
+    </body>
+</html>

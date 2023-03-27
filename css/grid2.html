@@ -1,0 +1,61 @@
+<html>
+    <head> 
+<style>
+ .my-first-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid:gap 30px;
+    background-color: bisque;
+    grid-auto-rows: 100px;
+   grid-auto-flow: row dense;
+ }
+
+ 
+ [class^='grid-item']
+{
+    outline: 3px dashed rebeccapurple;
+    font-size: 30px;
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item-5{
+    grid-column: 2/-1;
+}
+.grid-item-6{
+    grid-column: 3/5;
+    grid-row: 3/6;
+}
+ /* .grid-item-17{
+    grid-column: 6/span 2 ;
+    grid-row: 2/3;
+}  */
+   </style> 
+   </head>
+<div class="my-first-grid">
+    <div class="grid-item-1">1</div>
+    <div class="grid-item-2">2</div>
+    <div class="grid-item-3">3</div> 
+    <div class="grid-item-4">4</div>
+    <div class="grid-item-5">5</div>
+    <div class="grid-item-6">6</div>
+    <div class="grid-item-7">7</div>
+    <div class="grid-item-8">8</div>
+    <div class="grid-item-9">9</div>
+    <div class="grid-item-10">10</div>
+    <div class="grid-item-11">11</div>
+    <div class="grid-item-12">12</div>
+    <div class="grid-item-13">13</div>
+    <div class="grid-item-14">14</div>
+    <div class="grid-item-15">15</div>
+    <div class="grid-item-16">16</div>
+    <div class="grid-item-17">17</div>
+    <div class="grid-item-18">18</div>
+    <div class="grid-item-19">19</div>
+    <div class="grid-item-20">20</div>
+   
+   
+   
+</div>
+</html>

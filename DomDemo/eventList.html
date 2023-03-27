@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            window.onload= function(){
+                document.getElementById("square").addEventListener('click',changeColor)
+            }
+
+            function changeColor(){
+                let red=math.floor(math.random()*256)
+                let Green=math.floor(math.random()*256)
+                let blue=math.floor(math.random()*256)
+          
+              this.style.backgroundColor=`rgb(${red},${green},${blue})`
+            }
+
+        </script>
+        <div id="square" style="width: 100px; height: 100px; background-color: indigo;">Click for magic</div>
+    </body>
+</html>

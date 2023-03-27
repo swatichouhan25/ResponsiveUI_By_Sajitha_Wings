@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>
+        JS Tester
+    </title>
+    <style>
+        .hide{
+            display:none;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        .square.blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function toggleDisplay(){
+     let p= document.getElementById("parag");
+     if(p.style.display ==='none'){
+        p.style.display="block"
+     }
+ else {
+    p.style.display="none"
+ }
+}
+</script>
+<p id="parag">I might appear and disapper</p>
+ <button id="one" onclick="toggleDisplay()">click here</button>    
+</body>
+
+</html>

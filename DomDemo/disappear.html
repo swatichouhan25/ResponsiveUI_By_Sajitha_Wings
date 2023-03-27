@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+        JS Tester
+    </title>
+    <style>
+        .hide{
+            display:none;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        .square.blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<script>
+function disappear(){
+   // document.getElementById("shape").classList.add("hide")
+    document.getElementById("shape").classList.remove("blue")
+}
+
+</script>
+<p id="shape" class="square blue">I might appear and disappear</p>
+   <button id ="one" onclick="disappear()">Disappear</button> 
+</body>
+
+
+</html>
+    
+

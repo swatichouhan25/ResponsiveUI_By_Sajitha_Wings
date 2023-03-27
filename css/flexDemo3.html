@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta name="viewport"/ content="width-device-width , initial-scale="1.0"/>
+<style>
+    /* .FlexWrapper{
+        background-color: indigo;
+        font-size: 1rem;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content:space-evenly;
+    } */
+
+    .FlexWrapper{
+       border: 1px solid red;
+       background-color: rgb(109, 90, 122);
+        display: flex;
+        height: 100px;
+        justify-content:space-around;
+      
+    }
+    .FlexItem{
+        border: 1px solid rgb(54, 206, 226);
+       background-color: rgb(210, 156, 248);
+        height: 100px;
+        margin-top: 1rem;
+       
+        display: flex;
+        /* align-self: flex-start; */
+
+    }
+
+
+.FlexOne
+{
+    flex: 2 0 auto;
+}
+
+.FlexTwo,.FlexThree
+{
+    flex: 1 0.5 auto;
+}
+
+
+    /* .FlexItem{
+        background-color: aqua;
+        height: 100px;
+        width: 200px;
+        display: flex;
+        /* align-self: flex-start; */
+
+    } */
+    /* .AlignSelf
+    {
+        align-self: flex-end;
+    } */
+
+    
+
+</style>
+</head>
+<body>
+    <div class="FlexWrapper">
+       <div class="FlexItem FlexOne ">
+        I am the content in the inner FlexBox1
+       </div>
+
+       <div class="FlexItem FlexTwo">
+        I am the content in the inner FlexBox2
+       </div>
+
+       <div class="FlexItem FlexThree">
+        I am the content in the inner FlexBox3
+       </div>
+
+    </div>
+</body>
+</html>
